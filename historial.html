@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historial - TutorMatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">TutorMatch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buscar-tutor.html">Buscar Tutor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="creditos.html">Créditos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Usuario
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="mi-perfil.html">Mi Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logoutBtn">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="mb-4">Historial de Sesiones</h2>
+
+        <div class="row mb-4">
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="text-muted">Total Sesiones</h5>
+                        <h2 class="text-primary">12</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="text-muted">Horas Totales</h5>
+                        <h2 class="text-success">8.5</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="text-muted">Créditos Usados</h5>
+                        <h2 class="text-warning">60</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h5 class="text-muted">Promedio</h5>
+                        <h2 class="text-info">⭐ 4.6</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="d-flex justify-content-between align-items-center">
+                    <h5 class="mb-0">Sesiones Pasadas</h5>
+                    <select class="form-select w-auto">
+                        <option>Todas</option>
+                        <option>Última semana</option>
+                        <option>Último mes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th>Fecha</th>
+                                <th>Tutor</th>
+                                <th>Tema</th>
+                                <th>Tipo</th>
+                                <th>Duración</th>
+                                <th>Créditos</th>
+                                <th>Calificación</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>22/11/2025</td>
+                                <td>Juan Delgado</td>
+                                <td>Estructuras de Datos</td>
+                                <td><span class="badge bg-success">Grupal</span></td>
+                                <td>15 min</td>
+                                <td>5</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Ver Detalles</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>20/11/2025</td>
+                                <td>María López</td>
+                                <td>React Hooks</td>
+                                <td><span class="badge bg-primary">Individual</span></td>
+                                <td>30 min</td>
+                                <td>15</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Ver Detalles</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>18/11/2025</td>
+                                <td>Carlos Ramos</td>
+                                <td>Consultas SQL</td>
+                                <td><span class="badge bg-success">Grupal</span></td>
+                                <td>15 min</td>
+                                <td>5</td>
+                                <td>⭐⭐⭐⭐☆</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Ver Detalles</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>15/11/2025</td>
+                                <td>Ana Silva</td>
+                                <td>Pentesting Básico</td>
+                                <td><span class="badge bg-primary">Individual</span></td>
+                                <td>45 min</td>
+                                <td>20</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Ver Detalles</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>12/11/2025</td>
+                                <td>Juan Delgado</td>
+                                <td>Algoritmos de Ordenamiento</td>
+                                <td><span class="badge bg-success">Grupal</span></td>
+                                <td>15 min</td>
+                                <td>5</td>
+                                <td>⭐⭐⭐⭐⭐</td>
+                                <td>
+                                    <button class="btn btn-sm btn-outline-primary">Ver Detalles</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- MODAL DETALLE -->
+        <div class="modal fade" id="detalleModal" tabindex="-1">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Detalle de Sesión</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p><strong>Fecha:</strong> 22/11/2025</p>
+                                <p><strong>Hora:</strong> 10:30 PM</p>
+                                <p><strong>Tutor:</strong> Juan Delgado</p>
+                                <p><strong>Tipo:</strong> Sesión Grupal</p>
+                            </div>
+                            <div class="col-md-6">
+                                <p><strong>Tema:</strong> Estructuras de Datos</p>
+                                <p><strong>Duración:</strong> 15 minutos</p>
+                                <p><strong>Créditos:</strong> 5</p>
+                                <p><strong>Calificación:</strong> ⭐⭐⭐⭐⭐</p>
+                            </div>
+                        </div>
+                        <hr>
+                        <h6>Notas de la sesión</h6>
+                        <p class="text-muted">Revisamos la implementación de listas enlazadas simples en Python. El tutor explicó la diferencia entre listas y arrays, y cómo implementar métodos básicos como insert, delete y search.</p>
+                        <h6>Material guardado</h6>
+                        <div class="bg-light p-3 rounded">
+                            <code>
+                                class Node:<br>
+                                &nbsp;&nbsp;def __init__(self, data):<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;self.data = data<br>
+                                &nbsp;&nbsp;&nbsp;&nbsp;self.next = None
+                            </code>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        <button type="button" class="btn btn-primary">Descargar Material</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

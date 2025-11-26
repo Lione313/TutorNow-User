@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil del Tutor - TutorMatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">TutorMatch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="buscar-tutor.html">Buscar Tutor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="creditos.html">Créditos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Usuario
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="mi-perfil.html">Mi Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logoutBtn">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <a href="buscar-tutor.html" class="btn btn-outline-secondary mb-3">← Volver</a>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body text-center">
+                        <div class="bg-primary text-white rounded-circle d-inline-flex align-items-center justify-content-center mb-3" style="width: 120px; height: 120px; font-size: 48px;">
+                            JD
+                        </div>
+                        <h3>Juan Delgado</h3>
+                        <p class="text-muted">Tutor Senior</p>
+                        <div class="mb-3">
+                            <span class="badge bg-success">Disponible ahora</span>
+                        </div>
+                        <div class="mb-3">
+                            <h4 class="text-primary">4.8/5.0</h4>
+                            <p class="text-muted">⭐⭐⭐⭐⭐</p>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <a href="sesion.html?tutor=1&tipo=grupal" class="btn btn-success">Unirse a Sesión Grupal</a>
+                            <a href="sesion.html?tutor=1&tipo=individual" class="btn btn-primary">Solicitar Sesión Individual</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Información</h5>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><strong>Experiencia:</strong> 5 años</li>
+                            <li class="mb-2"><strong>Sesiones:</strong> 120+</li>
+                            <li class="mb-2"><strong>Estudiantes:</strong> 80+</li>
+                            <li class="mb-2"><strong>Horario:</strong> Flexible</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-8">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Sobre el tutor</h5>
+                        <p>Ingeniero de software con más de 5 años de experiencia en desarrollo y enseñanza de programación. Especializado en Python, Java y estructuras de datos. Me apasiona ayudar a los estudiantes a comprender conceptos complejos de manera simple.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Tecnologías y habilidades</h5>
+                        <div class="d-flex flex-wrap gap-2">
+                            <span class="badge bg-primary">Python</span>
+                            <span class="badge bg-primary">Java</span>
+                            <span class="badge bg-primary">C++</span>
+                            <span class="badge bg-secondary">Estructuras de Datos</span>
+                            <span class="badge bg-secondary">Algoritmos</span>
+                            <span class="badge bg-secondary">POO</span>
+                            <span class="badge bg-info">Git</span>
+                            <span class="badge bg-info">Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Método de enseñanza</h5>
+                        <p>Mi enfoque es práctico y orientado a proyectos. Comienzo identificando el problema del estudiante, luego explicamos la teoría necesaria y finalmente resolvemos el problema juntos. Siempre proporciono recursos adicionales y ejercicios de práctica.</p>
+                    </div>
+                </div>
+
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">Disponibilidad</h5>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Día</th>
+                                    <th>Horario</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Lunes - Viernes</td>
+                                    <td>8 PM - 12 AM</td>
+                                </tr>
+                                <tr>
+                                    <td>Sábado - Domingo</td>
+                                    <td>2 PM - 12 AM</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Reseñas de estudiantes</h5>
+                        <div class="mb-3 pb-3 border-bottom">
+                            <div class="d-flex justify-content-between mb-2">
+                                <strong>Carlos M.</strong>
+                                <span class="text-warning">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <p class="text-muted">Excelente tutor, muy paciente y explica muy bien. Me ayudó a entender listas enlazadas en Python.</p>
+                            <small class="text-muted">Hace 2 días</small>
+                        </div>
+                        <div class="mb-3 pb-3 border-bottom">
+                            <div class="d-flex justify-content-between mb-2">
+                                <strong>Ana P.</strong>
+                                <span class="text-warning">⭐⭐⭐⭐⭐</span>
+                            </div>
+                            <p class="text-muted">Juan es increíble. Me ayudó con mi proyecto final de algoritmos. Muy recomendado.</p>
+                            <small class="text-muted">Hace 1 semana</small>
+                        </div>
+                        <div>
+                            <div class="d-flex justify-content-between mb-2">
+                                <strong>Luis R.</strong>
+                                <span class="text-warning">⭐⭐⭐⭐☆</span>
+                            </div>
+                            <p class="text-muted">Buena explicación sobre POO en Java. A veces va un poco rápido pero responde todas las dudas.</p>
+                            <small class="text-muted">Hace 2 semanas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

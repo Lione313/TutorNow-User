@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscar Tutor - TutorMatch</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold" href="index.html">TutorMatch</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="buscar-tutor.html">Buscar Tutor</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="historial.html">Historial</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="creditos.html">Créditos</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown">
+                            Usuario
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="mi-perfil.html">Mi Perfil</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#" id="logoutBtn">Cerrar Sesión</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="mb-4">Buscar Tutor</h2>
+
+        <!-- FILTERS -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Área</label>
+                        <select class="form-select" id="filterArea">
+                            <option value="">Todas las áreas</option>
+                            <option value="programacion">Programación</option>
+                            <option value="desarrollo-web">Desarrollo Web</option>
+                            <option value="bases-datos">Bases de Datos</option>
+                            <option value="ciberseguridad">Ciberseguridad</option>
+                            <option value="redes">Redes</option>
+                            <option value="algoritmos">Algoritmos</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Tipo de sesión</label>
+                        <select class="form-select" id="filterTipo">
+                            <option value="">Todos</option>
+                            <option value="grupal">Grupal</option>
+                            <option value="individual">Individual</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Disponibilidad</label>
+                        <select class="form-select" id="filterDisponibilidad">
+                            <option value="">Todas</option>
+                            <option value="ahora">Disponible ahora</option>
+                            <option value="proximamente">Próximamente</option>
+                            <option value="madrugada">Madrugada</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label class="form-label">Nivel</label>
+                        <select class="form-select" id="filterNivel">
+                            <option value="">Todos</option>
+                            <option value="junior">Junior</option>
+                            <option value="intermedio">Intermedio</option>
+                            <option value="senior">Senior</option>
+                        </select>
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="applyFilters">Aplicar Filtros</button>
+            </div>
+        </div>
+
+        <!-- TUTORS LIST -->
+        <div class="row" id="tutorsList">
+            <!-- Tutor 1 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-primary text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 24px;">
+                                JD
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-0">Juan Delgado</h5>
+                                <small class="text-muted">Senior • Python, Java</small>
+                                <div>
+                                    <span class="badge bg-success">Disponible ahora</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text text-muted">Especialista en programación orientada a objetos y estructuras de datos. 5 años de experiencia.</p>
+                        <div class="mb-2">
+                            <strong>Valoración:</strong> ⭐⭐⭐⭐⭐ (4.8/5)
+                        </div>
+                        <div class="mb-3">
+                            <span class="badge bg-info">Programación</span>
+                            <span class="badge bg-secondary">Algoritmos</span>
+                        </div>
+                        <div class="d-flex gap-2">
+                            <a href="perfil-tutor.html?id=1" class="btn btn-outline-primary btn-sm">Ver Perfil</a>
+                            <a href="sesion.html?tutor=1&tipo=grupal" class="btn btn-success btn-sm">Sesión Grupal</a>
+                            <a href="sesion.html?tutor=1&tipo=individual" class="btn btn-primary btn-sm">Sesión Individual</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tutor 2 -->
+            <div class="col-md-6 mb-4">
+                <div class="card h-100">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="bg-success text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 24px;">
+                                ML
+                            </div>
+                            <div class="ms-3">
+                                <h5 class="mb-0">María López</h5>
+                                <small class="text-muted">Intermedio • HTML, CSS, JS</small>
+                                <div>
+                                    <span class="badge bg-warning text-dark">Próximamente (10 PM)</span>
+                                </div>
+                            </div>
+                        </div>
+                        <p class="card-text text-muted">Desarrolladora web full-stack. Experta en React y Node.js. Clases dinámicas y prácticas.</p>
+                        <div class="mb-2">
+                            <strong>Valoración:</strong> ⭐⭐⭐⭐⭐ (4.9/5)
+</div>
+<div class="mb-3">
+<span class="badge bg-info">Desarrollo Web</span>
+<span class="badge bg-secondary">Frontend</span>
+</div>
+<div class="d-flex gap-2">
+<a href="perfil-tutor.html?id=2" class="btn btn-outline-primary btn-sm">Ver Perfil</a>
+<a href="sesion.html?tutor=2&tipo=grupal" class="btn btn-success btn-sm">Sesión Grupal</a>
+<a href="sesion.html?tutor=2&tipo=individual" class="btn btn-primary btn-sm">Sesión Individual</a>
+</div>
+</div>
+</div>
+</div>        <!-- Tutor 3 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-danger text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 24px;">
+                            CR
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-0">Carlos Ramos</h5>
+                            <small class="text-muted">Senior • SQL, MongoDB</small>
+                            <div>
+                                <span class="badge bg-success">Disponible ahora</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-text text-muted">Administrador de bases de datos con experiencia en optimización de consultas y modelado.</p>
+                    <div class="mb-2">
+                        <strong>Valoración:</strong> ⭐⭐⭐⭐☆ (4.5/5)
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge bg-info">Bases de Datos</span>
+                        <span class="badge bg-secondary">SQL</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="perfil-tutor.html?id=3" class="btn btn-outline-primary btn-sm">Ver Perfil</a>
+                        <a href="sesion.html?tutor=3&tipo=grupal" class="btn btn-success btn-sm">Sesión Grupal</a>
+                        <a href="sesion.html?tutor=3&tipo=individual" class="btn btn-primary btn-sm">Sesión Individual</a>
+                    </div>
+                </div>
+            </div>
+        </div>        <!-- Tutor 4 -->
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                        <div class="bg-info text-white rounded-circle d-flex align-items-center justify-content-center" style="width: 60px; height: 60px; font-size: 24px;">
+                            AS
+                        </div>
+                        <div class="ms-3">
+                            <h5 class="mb-0">Ana Silva</h5>
+                            <small class="text-muted">Junior • Ciberseguridad</small>
+                            <div>
+                                <span class="badge bg-dark">Madrugada (2 AM)</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="card-text text-muted">Especialista en hacking ético y pentesting. Clases orientadas a la práctica.</p>
+                    <div class="mb-2">
+                        <strong>Valoración:</strong> ⭐⭐⭐⭐⭐ (4.7/5)
+                    </div>
+                    <div class="mb-3">
+                        <span class="badge bg-info">Ciberseguridad</span>
+                        <span class="badge bg-secondary">Hacking Ético</span>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <a href="perfil-tutor.html?id=4" class="btn btn-outline-primary btn-sm">Ver Perfil</a>
+                        <a href="sesion.html?tutor=4&tipo=grupal" class="btn btn-success btn-sm">Sesión Grupal</a>
+                        <a href="sesion.html?tutor=4&tipo=individual" class="btn btn-primary btn-sm">Sesión Individual</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
+````
