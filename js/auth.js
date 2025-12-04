@@ -73,6 +73,6 @@ document.getElementById('formRegister').addEventListener('submit', function(e) {
     // Auto login
     localStorage.setItem('currentUser', JSON.stringify(newUser));
     
-    alert('¡Registro exitoso! Bienvenido a TutorMatch');
+    alert('¡Registro exitoso! Bienvenido a TutorNow');
     window.location.href = 'index.html';
 });
